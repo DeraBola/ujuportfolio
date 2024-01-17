@@ -1,7 +1,6 @@
 import { firstLady, fourthLady, secondLady, thirdLady } from "@/assets";
 import React from "react";
 import Image from "next/image";
-import { Icons } from "@/components/Icons/Icons";
 
 function Footer () {
   return (
