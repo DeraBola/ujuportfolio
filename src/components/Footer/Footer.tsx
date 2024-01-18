@@ -1,80 +1,57 @@
-"use client";
+import React from "react";
+import { Icons } from "@/components/Icons/Icons";
 
-import { firstLady, fourthLady, secondLady, thirdLady } from "@/assets";
-import React, { useRef } from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import {
-  appear,
-  appear2,
-  appear3,
-  appear4,
-  fadeUp2,
-  fadeUp3,
-  fadeUp4,
-} from "@/utils/framer-motion-variants";
-
-function Footer () {
-  const scrollRef = useRef(null);
+export default function Footer () {
+  const currentDate = new Date().getFullYear();
 
   return (
-    <footer className="w-full flex pt-10 flex-col bg-pink-500 bg-opacity-[35%] items-center justify-center">
-      <p className="text-white text-2xl font-bold ">Follow me @BELLAADNDRV</p>
-      <div className="flex gap-12 px-36 w-full mt-10 ">
-        <motion.div
-          variants={appear}
-          viewport={{ once: true }}
-          initial="hide"
-          whileInView="show"
-          ref={scrollRef}
-          className="hover:scale-110 transition-all cursor-pointer"
-        >
-          <Image src={firstLady} alt="first lady" />
-        </motion.div>
-        <motion.div
-          variants={appear2}
-          viewport={{ once: true }}
-          initial="hide"
-          whileInView="show"
-          ref={scrollRef}
-          className="transform translate-y-32 hover:scale-110 transition-all cursor-pointer"
-        >
-          <Image src={secondLady} alt="second lady" />
-        </motion.div>
-        <motion.div
-          variants={appear4}
-          viewport={{ once: true }}
-          initial="hide"
-          whileInView="show"
-          ref={scrollRef}
-          className="transform translate-y-52 hover:scale-110 transition-all cursor-pointer"
-        >
-          <Image src={thirdLady} alt="third lady" />
-        </motion.div>
-        <motion.div
-          variants={appear3}
-          viewport={{ once: true }}
-          initial="hide"
-          whileInView="show"
-          ref={scrollRef}
-          className="transform translate-y-40 hover:scale-110 transition-all cursor-pointer"
-        >
-          <Image src={thirdLady} alt="first lady" />
-        </motion.div>
-        <motion.div
-          variants={appear}
-          viewport={{ once: true }}
-          initial="hide"
-          whileInView="show"
-          ref={scrollRef}
-          className="hover:scale-110 transition-all cursor-pointer"
-        >
-          {" "}
-          <Image src={fourthLady} alt="first lady" />
-        </motion.div>
+    <div className="lg:mt-80 mt-0 bg-pink-600 flex flex-col px-2 justify-center items-center">
+      <div className="w-full lg:hidden  block mb-8 px-5 cursor-pointer flex-col items-center justify-between">
+        <div className="flex items-start w-full justify-between mt-10">
+          <div className="lg:block hidden flex-col items-start justify-start">
+            <p className="text-base mb-4 text-white font-normal">Get familiar</p>
+            <div className="flex items-center justify-start gap-8">
+              <Icons.twitter />
+              <Icons.google />
+              <Icons.instagram />
+              <Icons.facebook />
+            </div>
+          </div>
+          <div className="flex flex-col items-start justify-start gap-6">
+            <p className="text-white font-medium text-xl lg:text-2xl">Company</p>
+            <div className="flex flex-col items-start gap-4 justify-start">
+              <p className="lg:text-base text-xs font-sans font-normal text-white">About Us</p>
+              <p className="lg:text-base text-xs font-sans font-normal text-white">Blog</p>
+              <p className="lg:text-base text-xs  font-sans font-normal text-white">Terms and Conditions</p>
+              <p className="lg:text-base text-xs  font-sans font-normal text-white">Privacy policy</p>
+            </div>
+          </div>
+          <div className="flex flex-col items-start justify-start gap-6">
+            <p className="text-white font-medium text-xl lg:text-2xl">Contact</p>
+            <div className="flex flex-col items-start gap-4 justify-start">
+              <p className="lg:text-base text-xs  font-sans font-normal text-white">useabacus@gmail.com</p>
+              <p className="lg:text-base text-xs  font-sans font-normal text-white">+234813123456</p>
+              <p className="lg:text-base text-xs  font-sans font-normal text-white">Lagos, Nigeria.</p>
+            </div>
+          </div>
+        </div>
+        <div className="lg:hidden block flex-col items-start justify-start">
+          <p className="text-base mt-4 mb-4 text-white font-normal">Get familiar</p>
+          <div className="flex items-center justify-start gap-8">
+            <Icons.facebook />
+            <Icons.google />
+            <Icons.instagram />
+            <Icons.twitter />
+          </div>
+        </div>
       </div>
-    </footer>
+      <div className="flex items-center text-sm lg:text-xl gap-2 justify-center w-full">
+        <p className="text-white font-semibold">
+        &copy; {currentDate} All rights reserved | Made with
+        </p>
+        <div className=""><Icons.love /> </div>
+        <p  className="text-white  font-semibold">  by derabola x rogue-codes. </p>
+      </div>
+    </div>
   );
 }
-
-export default Footer;

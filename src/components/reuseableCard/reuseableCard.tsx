@@ -29,7 +29,7 @@ function ReusableCard ({
     <div
       className={`${
         switchCard ? "lg:flex-row" : "lg:flex-row-reverse"
-      } flex flex-col gap-12 font-sans items-center justify-center text-start bg-white`}
+      } flex flex-col gap-6 lg:gap-12 font-sans items-center justify-center text-center bg-white overflow-x-hidden`}
     >
       <motion.div
         initial={false}

@@ -42,19 +42,19 @@ function ClientReview () {
   };
 
   return (
-    <section className=" relative w-full">
-      <div className="">
-        <Image src={flowerImage} alt="flower background" className="bg-cover" />
+    <section id="reviews" className="lg:h-auto h-[25rem] relative w-full">
+      <div className="hidden lg:block ">
+        <Image src={flowerImage} alt="flower background" className="bg-cover w-full" />
       </div>
       {reviews.map((review, index) => (
         <div
           className={`${
             currentSlide === index ? "block" : "hidden"
-          } flex px-[6.22vw] animate-fade flex-col absolute top-1/2 -translate-y-1/2 bg-white bg-opacity-[84%] items-center gap-8 justify-center h-full `}
+          } flex px-3 lg:px-[6.22vw] h-auto bg-white backdrop-filter backdrop-blur-md bg-opacity-10 animate-fade flex-col absolute top-1/2 -translate-y-1/2 items-center gap-8 justify-center`}
           key={index}
         >
           <div
-            className="ml-auto rounded-full p-2 mb-4 border border-[#412626] cursor-pointer"
+            className="ml-auto rounded-full p-2 mb-2 lg:mb-4 border border-[#412626] cursor-pointer"
             onClick={nextSlide}
           >
             <Icons.arrowRight />
@@ -65,7 +65,7 @@ function ClientReview () {
             initial="hide"
             whileInView="show"
             ref={scrollRef}
-            className="animate-fade text-black font-bold text-2xl"
+            className="animate-fade text-black font-bold text-base lg:text-2xl"
           >
             {review.title}
           </motion.p>
@@ -75,7 +75,7 @@ function ClientReview () {
             initial="hide"
             whileInView="show"
             ref={scrollRef}
-            className="animate-fade text-base text-black font-meduim"
+            className="animate-fade text-sm lg:text-base text-black font-meduim"
           >
             {review.content}
           </motion.p>

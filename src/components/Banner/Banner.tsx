@@ -14,13 +14,13 @@ import {
 } from "@/utils/framer-motion-variants";
 import { motion } from "framer-motion";
 
-function Banner () {
+export default function Banner () {
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
   const scrollRef = useRef(null);
 
   return (
-    <section className="mt-16 bg-pink-600 bg-opacity-[63%] rounded-bl-lg w-full">
-      <div className="px-[10vw] py-10 w-full flex gap-[7.56rem] items-center">
+    <section className="lg:mt-[5.5rem] mt-16 flex items-center justify-center bg-pink-600 bg-opacity-[63%] rounded-bl-lg w-full">
+      <div className="lg:px-[10vw] px-3 py-10 w-60 lg:w-full flex lg:flex-row flex-col items-center  ">
         <motion.div
           initial={false}
           animate={
@@ -39,7 +39,7 @@ function Banner () {
             onLoad={() => setIsLoaded(true)}
           />
         </motion.div>
-        <div className="flex flex-col items-center justify-start gap-5 text-center w-[50rem]">
+        <div className="flex flex-col lg:mt-0 mt-6 items-center justify-start gap-5 text-center w-full lg:w-[50rem]">
           <motion.p
             variants={fadeUp1}
             viewport={{ once: true }}
@@ -91,5 +91,3 @@ function Banner () {
     </section>
   );
 }
-
-export default Banner;
