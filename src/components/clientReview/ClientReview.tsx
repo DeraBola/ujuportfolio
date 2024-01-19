@@ -42,7 +42,7 @@ function ClientReview () {
   };
 
   return (
-    <section id="reviews" className="lg:h-auto h-[25rem] relative w-full">
+    <section  className="lg:h-auto h-[25rem] relative w-full">
       <div className="hidden lg:block ">
         <Image src={flowerImage} alt="flower background" className="bg-cover w-full" />
       </div>
@@ -51,6 +51,7 @@ function ClientReview () {
           className={`${
             currentSlide === index ? "block" : "hidden"
           } flex px-3 lg:px-[6.22vw] h-auto bg-white backdrop-filter backdrop-blur-md bg-opacity-10 animate-fade flex-col absolute top-1/2 -translate-y-1/2 items-center gap-8 justify-center`}
+          id="reviews"
           key={index}
         >
           <div

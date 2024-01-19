@@ -10,23 +10,23 @@ const Navbar = () => {
   return (
     <nav className="top-0 px-[6.22vw] z-[99999990] flex bg-pink-500 justify-between items-center bg-opacity-[42%] fixed py-4 w-full">
       <div className="font-pattaya text-2xl font-bold">
-        <Link href="/" id="home">
-               Obianuju Rosemary
+        <Link href="#home">
+        THE LIFESTYLE BRAND CONSULT AGENCY
         </Link>
       </div>
       <ol className="cursor-pointer hidden lg:flex py-4">
         <div className="flex gap-6 text-white text-base font-bold items-center justify-start">
           <li>
-            <Link href="/" id="home">Home</Link>
+            <Link href="#home">Home</Link>
           </li>
-          <li  id="about">
-            <Link href="" > About</Link>
+          <li  id="">
+            <Link href="#about" > About</Link>
           </li>
-          <li id="services" >
-            <Link href="" >Services</Link>
+          <li id="" >
+            <Link href="#services" >Services</Link>
           </li>
           <li>
-            <Link href="" id="review">
+            <Link href="#reviews">
                 Review
             </Link>
           </li>

@@ -22,8 +22,8 @@ function ReusableCardServiceCard ({ text1, text2 }: ReuseableCardProps) {
       className="bg-white rounded-lg p-8 lg:p-11"
     >
       <div className="flex flex-col items-center lg:items-start justify-center lg:justify-start gap-8">
-        <p className="lg:text-2xl text-lg font-bold text-black ">{text1}</p>
-        <p className="lg:text-xl text-xs text-black font-normal">{text2}</p>
+        <p className="lg:text-2xl text-xl font-bold text-black ">{text1}</p>
+        <p className="lg:text-xl text-lg lg:text-start text-center text-black !font-normal">{text2}</p>
         <button className="text-black lg:text-xl text-base bg-pink-400 bg-opacity-[47%] py-4 px-7 lg:px-16 rounded-lg hover:scale-110 transition-all">
           Contact me
         </button>
