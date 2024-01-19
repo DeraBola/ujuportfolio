@@ -3,7 +3,7 @@ import ReusableCard from "@/components/reuseableCard/reuseableCard";
 import { FirstImage } from "@/assets";
 import ReusableCardServiceCard from "@/components/reuseableCard/reuseableServiceCard";
 
-function Service() {
+function Service () {
   return (
     <section id="services" className="mt-14 gap-4">
       <div className="flex flex-col lg:gap-0 gap-5 px-[6.22vw] pb-14">

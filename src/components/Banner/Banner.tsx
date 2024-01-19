@@ -14,7 +14,7 @@ import {
 } from "@/utils/framer-motion-variants";
 import { motion } from "framer-motion";
 
-export default function Banner() {
+export default function Banner () {
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
   const scrollRef = useRef(null);
 

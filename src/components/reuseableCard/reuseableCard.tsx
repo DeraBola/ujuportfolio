@@ -20,7 +20,7 @@ interface ReuseableCardProps {
   isList?: boolean;
 }
 
-function ReusableCard({
+function ReusableCard ({
   text1,
   text2,
   switchCard = true,
