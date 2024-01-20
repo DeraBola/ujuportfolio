@@ -131,7 +131,7 @@ function ReusableCard ({
               className="text-xl flex items-center justify-start text-left"
             >
               <div className="rounded-full mt-2 bg-pink-500 hover:translate-x-2 mr-3 bg-opacity-[35%] w-3 h-3 lg:h-6 lg:w-6"></div>
-              <p className="text-base font-normal lg:text-lg">Content Development and Campaign Management</p>
+              <p className="text-base  font-normal lg:text-lg">Content Development and Campaign Management</p>
             </motion.li>
             <motion.li
               variants={fadeUp4}
