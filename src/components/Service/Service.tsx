@@ -21,7 +21,7 @@ function Service () {
           isList
         />
       </div>
-      <div className="flex lg:flex-row flex-col px-[6.22vw] gap-12 py-6 lg:py-14 bg-pink-400 bg-opacity-[35%] items-start justify-start">
+      <div className="flex lg:flex-row flex-col px-[6.22vw] gap-6 lg:gap-12 py-6 lg:py-14 bg-pink-400 bg-opacity-[35%] items-start justify-start">
         <ReusableCardServiceCard
           text1="Mission"
           text2="our mission is to empower Brands, Individuals and causes by crafting compelling narratives that resonates with their targets and be the catalyst for positive change through Strategic and Effective Communications"
