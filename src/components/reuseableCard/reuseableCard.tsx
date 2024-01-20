@@ -15,6 +15,7 @@ import Image from "next/image";
 interface ReuseableCardProps {
   text1: string;
   text2: string;
+  text3?: string;
   img?: string;
   switchCard: boolean;
   isList?: boolean;
@@ -23,6 +24,7 @@ interface ReuseableCardProps {
 function ReusableCard ({
   text1,
   text2,
+  text3,
   switchCard = true,
   img,
   isList,
@@ -61,9 +63,9 @@ function ReusableCard ({
               initial="hide"
               whileInView="show"
               ref={scrollRef}
-              className="text-xl text-left"
+              className="text-xl flex items-center justify-start text-left"
             >
-              Public Relations Consultancy
+              <div className="rounded-full bg-pink-500 mr-3 hover:translate-x-2 bg-opacity-[35%] h-3 w-3 lg:h-6 lg:w-6"></div> <p className="text-base lg:text-lg"> Public Relations Consultancy</p>
             </motion.li>
             <motion.li
               variants={fadeUp1}
@@ -71,9 +73,10 @@ function ReusableCard ({
               initial="hide"
               whileInView="show"
               ref={scrollRef}
-              className="my-2 text-xl text-left"
+              className="my-2 flex items-center justify-start text-xl text-left"
             >
-              Strategic Communications
+              <div className="rounded-full bg-pink-500 mr-3 hover:translate-x-2 bg-opacity-[35%] h-3 w-3 lg:h-6 lg:w-6"></div>
+              <p className="text-base font-normal lg:text-lg">Strategic Communications</p>
             </motion.li>
             <motion.li
               variants={fadeUp1}
@@ -81,9 +84,10 @@ function ReusableCard ({
               initial="hide"
               whileInView="show"
               ref={scrollRef}
-              className="text-xl text-left"
+              className="text-xl flex items-center justify-start text-left"
             >
-              Personal Branding
+              <div className="rounded-full bg-pink-500 mr-3 hover:translate-x-2 bg-opacity-[35%] h-3 w-3 lg:h-6 lg:w-6"></div>
+              <p className="text-base font-normal lg:text-lg">Personal Branding</p>
             </motion.li>
             <motion.li
               variants={fadeUp1}
@@ -91,9 +95,10 @@ function ReusableCard ({
               initial="hide"
               whileInView="show"
               ref={scrollRef}
-              className="text-xl text-left"
+              className="text-xl mt-2 flex items-center justify-start text-left"
             >
-              Corporate Branding & Executive Profiling
+              <div className="rounded-full bg-pink-500 mr-3 hover:translate-x-2 bg-opacity-[35%] w-3 h-3 lg:h-6 lg:w-6"></div>
+              <p className="text-base font-normal lg:text-lg"> Corporate Branding & Executive Profiling</p>
             </motion.li>
             <motion.li
               variants={fadeUp1}
@@ -101,9 +106,10 @@ function ReusableCard ({
               initial="hide"
               whileInView="show"
               ref={scrollRef}
-              className="my-2 text-xl text-left"
+              className="my-2 text-xl flex items-center justify-start text-left"
             >
-              Digital Media & Media Relations
+              <div className="rounded-full bg-pink-500 mr-3 hover:translate-x-2 bg-opacity-[35%] h-3 w-3 lg:h-6 lg:w-6"></div>
+              <p className="text-base font-normal lg:text-lg"> Digital Media & Media Relations</p>
             </motion.li>
             <motion.li
               variants={fadeUp2}
@@ -111,9 +117,10 @@ function ReusableCard ({
               initial="hide"
               whileInView="show"
               ref={scrollRef}
-              className="text-xl text-left"
+              className="text-xl flex items-center justify-start text-left"
             >
-              Crisis and Reputation Management
+              <div className="rounded-full bg-pink-500 mr-3 hover:translate-x-2 bg-opacity-[35%] w-3 h-3 lg:h-6 lg:w-6"></div>
+              <p className="text-base font-normal lg:text-lg">Crisis and Reputation Management</p>
             </motion.li>
             <motion.li
               variants={fadeUp3}
@@ -121,9 +128,10 @@ function ReusableCard ({
               initial="hide"
               whileInView="show"
               ref={scrollRef}
-              className="text-xl text-left"
+              className="text-xl flex items-center justify-start text-left"
             >
-              Content Development and Campaign Management
+              <div className="rounded-full mt-2 bg-pink-500 hover:translate-x-2 mr-3 bg-opacity-[35%] w-3 h-3 lg:h-6 lg:w-6"></div>
+              <p className="text-base font-normal lg:text-lg">Content Development and Campaign Management</p>
             </motion.li>
             <motion.li
               variants={fadeUp4}
@@ -131,19 +139,10 @@ function ReusableCard ({
               initial="hide"
               whileInView="show"
               ref={scrollRef}
-              className="my-2 text-xl text-left"
+              className="my-2 flex items-center justify-start text-xl text-left"
             >
-              Events – Corporate Event and Stakeholders Engagement
-            </motion.li>
-            <motion.li
-              variants={fadeUp1}
-              viewport={{ once: true }}
-              initial="hide"
-              whileInView="show"
-              ref={scrollRef}
-              className="text-xl text-left"
-            >
-              Public Relations Consultancy
+              <div className="rounded-full bg-pink-500 mr-3 hover:translate-x-2 bg-opacity-[35%] h-3 w-3 lg:h-6 lg:w-6"></div>
+              <p className="text-base font-normal lg:text-lg"> Events – Corporate Event and Stakeholders Engagement</p>
             </motion.li>
           </ol>
         ) : (
@@ -154,7 +153,7 @@ function ReusableCard ({
               initial="hide"
               whileInView="show"
               ref={scrollRef}
-              className="text-4xl font-bold mb-3 text-black "
+              className="lg:text-4xl text-2xl font-bold mb-3 text-black "
             >
               {text1}
             </motion.p>
@@ -167,6 +166,16 @@ function ReusableCard ({
               className="lg:text-2xl text-left mt-3 text-lg text-black font-normal"
             >
               {text2}
+            </motion.p>
+            <motion.p
+              variants={fadeUp1}
+              viewport={{ once: true }}
+              initial="hide"
+              whileInView="show"
+              ref={scrollRef}
+              className="lg:text-2xl text-left mt-3 text-lg text-black font-normal"
+            >
+              {text3}
             </motion.p>
           </div>
         )}

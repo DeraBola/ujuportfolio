@@ -9,9 +9,14 @@ const Navbar = () => {
 
   return (
     <nav className="top-0 px-[6.22vw] z-[99999990] flex bg-pink-500 justify-between items-center bg-opacity-[42%] fixed py-4 w-full">
-      <div className="font-pattaya text-2xl font-bold">
+      <div className="font-pattaya text-black text-opacity-[60%] lg:block hidden text-wrap lg:text-2xl font-bold">
         <Link href="#home">
         THE LIFESTYLE BRAND CONSULT AGENCY
+        </Link>
+      </div>
+      <div className="font-pattaya lg:hidden block text-black text-opacity-70 text-wrap lg:text-2xl font-bold">
+        <Link href="#home" className=" flex flex-col text-xs">
+          <p>THE LIFESTYLE</p> <p> BRAND </p> <p>CONSULT AGENCY</p>
         </Link>
       </div>
       <ol className="cursor-pointer hidden lg:flex py-4">
