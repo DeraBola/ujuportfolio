@@ -5,9 +5,9 @@ export default function Footer () {
   const currentDate = new Date().getFullYear();
 
   return (
-    <div className="lg:mt-80 mt-0 bg-pink-600 flex flex-col px-2 justify-center items-center">
+    <div className="lg:mt-80 mt-20 bg-pink-600 flex flex-col px-2 justify-center items-center">
       <div className="w-full lg:hidden  block mb-8 px-5 cursor-pointer flex-col items-center justify-between">
-        <div className="flex items-start w-full justify-between mt-10">
+        <div className="flex items-start w-full justify-between mt-5 lg:mt-10">
           <div className="lg:block hidden flex-col items-start justify-start">
             <p className="text-base mb-4 text-white font-normal">Get familiar</p>
             <div className="flex items-center justify-start gap-8">
@@ -21,7 +21,7 @@ export default function Footer () {
             <p className="text-white font-medium text-xl lg:text-2xl">Company</p>
             <div className="flex flex-col items-start gap-4 justify-start">
               <p className="lg:text-base text-xs font-sans font-normal text-white">About Us</p>
-              <p className="lg:text-base text-xs font-sans font-normal text-white">Blog</p>
+              <p className="lg:text-base text-xs font-sans font-normal text-white">Services</p>
               <p className="lg:text-base text-xs  font-sans font-normal text-white">Terms and Conditions</p>
               <p className="lg:text-base text-xs  font-sans font-normal text-white">Privacy policy</p>
             </div>

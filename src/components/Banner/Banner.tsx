@@ -20,7 +20,7 @@ export default function Banner () {
 
   return (
     <section
-      className="lg:mt-[5.5rem] mt-16 flex items-center justify-center bg-pink-600 bg-opacity-[63%] rounded-bl-lg w-full"
+      className="lg:mt-[5.5rem] mt-[5.4rem] flex items-center justify-center bg-pink-600 bg-opacity-[63%] rounded-bl-lg w-full"
       id="home"
     >
       <div className="lg:px-[8vw] px-3 py-10 w-full lg:w-full flex justify-between lg:flex-row flex-col items-center  ">
@@ -49,7 +49,7 @@ export default function Banner () {
             initial="hide"
             whileInView="show"
             ref={scrollRef}
-            className="text-white font-bold text-4xl lg:text-4xl"
+            className="text-white font-bold text-2xl lg:text-4xl"
           >
             What We Do
           </motion.p>
@@ -59,7 +59,7 @@ export default function Banner () {
             initial="hide"
             whileInView="show"
             ref={scrollRef}
-            className="text-white font-semibold text-lg"
+            className="text-white font-semibold text-base lg:text-lg"
           >
             Welcome to The Lifestyle Brand Consult Agency – TLBC Agency, your
             partner in Strategic Public Relations and Brand Communications.
