@@ -51,11 +51,12 @@ function ClientReview () {
   };
 
   return (
-    <section  className="lg:h-auto h-[25rem] relative w-full">
+    <section  className="lg:h-auto h-[25rem] lg:mb-0 mb-10 relative w-full">
       <div className="hidden lg:block ">
         <Image src={flowerImage} alt="flower background" className="bg-cover w-full" />
       </div>
-      <div className="lg:px-[6.22vw] w-full bg-white backdrop-filter backdrop-blur-sm bg-opacity-10 animate-fade  absolute top-1/2 -translate-y-1/2">
+      <div className="lg:px-[6.22vw] flex items-center justify-center flex-col w-full lbg-white  backdrop-filter lg:rounded-none rounded-lg lg:border-none border border-pink-400 backdrop-blur-sm bg-opacity-10 animate-fade absolute top-1/2 -translate-y-1/2">
+        <p className="text-black font-bold text-base mb-4 mt-6 lg:text-3xl">What Our Customers Are Saying</p>
         {reviews.map((review, index) => (
           <div
             className={`${
@@ -76,7 +77,7 @@ function ClientReview () {
               initial="hide"
               whileInView="show"
               ref={scrollRef}
-              className="animate-fade text-black font-bold text-base lg:text-2xl"
+              className="animate-fade text-black font-bold text-base lg:text-xl"
             >
               {review.title}
             </motion.p>
@@ -101,7 +102,7 @@ function ClientReview () {
               {review.name}
             </motion.p>
             <div
-              className="mr-auto mt-6 rounded-full p-2 border border-[#412626] cursor-pointer"
+              className="mr-auto mt-6 mb-5 lg:mb-0 rounded-full p-2 border border-[#412626] cursor-pointer"
               onClick={goToPrevSlide}
             >
               <Icons.arrowLeft />

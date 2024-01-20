@@ -20,7 +20,7 @@ export default function Banner () {
 
   return (
     <section
-      className="lg:mt-[5.5rem] mt-[5.4rem] flex items-center justify-center bg-pink-600 bg-opacity-[63%] rounded-bl-lg w-full"
+      className="lg:mt-[5.5rem] mt-[5.3rem] flex items-center justify-center bg-pink-600 bg-opacity-[63%] rounded-bl-lg w-full"
       id="home"
     >
       <div className="lg:px-[8vw] px-3 py-10 w-full lg:w-full flex justify-between lg:flex-row flex-col items-center  ">

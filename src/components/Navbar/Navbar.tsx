@@ -42,10 +42,20 @@ const Navbar = () => {
       </div>
       <div className={`${openMenu ? "translate-x-0 " : "translate-x-[-100%]"} w-full h-full flex flex-col items-start justify-start lg:hidden z-20 fixed transition-transform top-0 left-0  pt-24 bg-white`}>
         <ol className="flex flex-col gap-8 cursor-pointer text-center items-center  justify-center text-pink-400 ml-40  ">
-          <li className="text-md font-semibold font-sans">Home</li>
-          <li className="text-md font-semibold font-sans"  >About</li>
-          <li className="text-md font-semibold font-sans">Services</li>
-          <li className="text-md font-semibold font-sans">Review</li>
+          <li className="text-md font-semibold font-sans">
+            <Link href="#home">Home</Link>
+          </li>
+          <li className="text-md font-semibold font-sans"  >
+            <Link href="#about" > About</Link>
+          </li>
+          <li className="text-md font-semibold font-sans">
+            <Link href="#services" >Services</Link>
+          </li>
+          <li className="text-md font-semibold font-sans">
+            <Link href="#reviews">
+                Review
+            </Link>
+          </li>
         </ol>
       </div>
     </nav>
