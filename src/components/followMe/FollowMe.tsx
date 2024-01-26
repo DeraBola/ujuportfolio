@@ -15,7 +15,7 @@ function FollowMe () {
   const scrollRef = useRef(null);
 
   return (
-    <section className="w-full lg:flex hidden pt-10 flex-col bg-pink-500 bg-opacity-[35%] items-center justify-center">
+    <section className="w-full lg:flex hidden pt-10 flex-col bg-[#372b25] bg-opacity-[80%] items-center justify-center">
       <p className="text-white text-2xl font-bold ">Follow me @BELLAADNDRV</p>
       <div className="flex gap-12 px-36 w-full mt-10 ">
         <motion.div

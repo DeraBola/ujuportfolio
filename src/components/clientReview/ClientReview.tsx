@@ -55,8 +55,8 @@ function ClientReview () {
       <div className="hidden lg:block ">
         <Image src={flowerImage} alt="flower background" className="bg-cover w-full" />
       </div>
-      <div className="lg:px-[6.22vw] flex items-center justify-center flex-col w-full lbg-white  backdrop-filter lg:rounded-none rounded-lg lg:border-none border border-pink-400 backdrop-blur-sm bg-opacity-10 animate-fade absolute top-1/2 -translate-y-1/2">
-        <p className="text-black font-bold text-base mb-4 mt-6 lg:text-3xl">What Our Customers Are Saying</p>
+      <div className="lg:px-[6.22vw] flex items-center justify-center flex-col w-full lbg-white  backdrop-filter lg:rounded-none rounded-lg lg:border-none border border-[#372b25] backdrop-blur-sm bg-opacity-10 animate-fade absolute top-1/2 -translate-y-1/2">
+        <p className="text-[#070403] font-bold text-base mb-4 mt-6 lg:text-3xl">What Our Customers Are Saying</p>
         {reviews.map((review, index) => (
           <div
             className={`${
@@ -77,7 +77,7 @@ function ClientReview () {
               initial="hide"
               whileInView="show"
               ref={scrollRef}
-              className="animate-fade text-black font-bold text-base lg:text-xl"
+              className="animate-fade text-[#070403] font-bold text-base lg:text-xl"
             >
               {review.title}
             </motion.p>
@@ -87,7 +87,7 @@ function ClientReview () {
               initial="hide"
               whileInView="show"
               ref={scrollRef}
-              className="animate-fade text-sm w-full  lg:max-w-[800px] lg:text-base text-black font-meduim"
+              className="animate-fade text-sm w-full  lg:max-w-[800px] lg:text-base text-[#070403] font-medium"
             >
               {review.content}
             </motion.p>
