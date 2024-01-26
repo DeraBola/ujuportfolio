@@ -5,5 +5,6 @@ import firstLady from "./lady1.svg";
 import secondLady from "./Lady2.svg";
 import thirdLady from "./lady3.svg";
 import fourthLady from "./lady4.svg";
+import Logo from "./ujuLogo.jpg";
 
-export { DummyBanner, FirstImage, flowerImage, firstLady, secondLady, thirdLady, fourthLady };
+export { DummyBanner, FirstImage, flowerImage, firstLady, secondLady, thirdLady, fourthLady, Logo };

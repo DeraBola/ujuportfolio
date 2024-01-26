@@ -5,7 +5,7 @@ export default function Footer () {
   const currentDate = new Date().getFullYear();
 
   return (
-    <div className="lg:mt-80 mt-20 bg-pink-600 flex flex-col px-2 justify-center items-center">
+    <div className="lg:mt-80 mt-20 bg-[#372b25] bg-opacity-[80%] flex flex-col px-2 justify-center items-center">
       <div className="w-full lg:hidden  block mb-8 px-5 cursor-pointer flex-col items-center justify-between">
         <div className="flex items-start w-full justify-between mt-5 lg:mt-10">
           <div className="lg:block hidden flex-col items-start justify-start">
