@@ -1,11 +1,12 @@
 import React from "react";
 import { Icons } from "@/components/Icons/Icons";
+import Link from "next/link";
 
 export default function Footer () {
   const currentDate = new Date().getFullYear();
 
   return (
-    <div className="lg:mt-80 mt-20 bg-[#372b25] bg-opacity-[80%] flex flex-col px-2 justify-center items-center">
+    <div className="lg:mt-80 mt-20 bg-[#080808] flex flex-col px-2 justify-center items-center">
       <div className="w-full lg:hidden  block mb-8 px-5 cursor-pointer flex-col items-center justify-between">
         <div className="flex items-start w-full justify-between mt-5 lg:mt-10">
           <div className="lg:block hidden flex-col items-start justify-start">
@@ -50,7 +51,7 @@ export default function Footer () {
         &copy; {currentDate} All rights reserved | Made with
         </p>
         <div className=""><Icons.love /> </div>
-        <p  className="text-white  font-semibold">  by derabola x rogue-codes. </p>
+        <p  className="text-white  font-semibold">  by <Link href="https://github.com/DeraBola/" target="_blank">derabola</Link>  x <Link href="https://github.com/rogue-codes/" target="_blank">rogue-codes.</Link> </p>
       </div>
     </div>
   );

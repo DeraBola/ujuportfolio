@@ -13,6 +13,7 @@ import {
   visibleMask,
 } from "@/utils/framer-motion-variants";
 import { motion } from "framer-motion";
+import { Call, Message } from "iconsax-react";
 
 export default function Banner () {
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
@@ -20,7 +21,7 @@ export default function Banner () {
 
   return (
     <section
-      className="lg:mt-[6rem] mt-[5.9rem] flex items-center justify-center bg-[#372b25] bg-opacity-[80%] rounded-bl-lg w-full"
+      className="lg:mt-[6rem] mt-[5.9rem] flex items-center justify-center bg-[#080808] rounded-bl-lg w-full"
       id="home"
     >
       <div className="lg:px-[8vw] px-3 py-10 w-full lg:w-full flex justify-between lg:flex-row flex-col items-center  ">
@@ -75,7 +76,7 @@ export default function Banner () {
             initial="hide"
             whileInView="show"
             ref={scrollRef}
-            className="text-black text-opacity-[57%]  bg-white bg-opacity-[49%] py-4 px-16 rounded-lg hover:bg-[#21130d] hover:text-white  hover:!scale-110 transition-all"
+            className="text-[#080808]  bg-white  py-4 px-16 rounded-lg hover:bg-white   hover:!scale-110 transition-all"
           >
             Let’s Chat
           </motion.button>
@@ -85,10 +86,10 @@ export default function Banner () {
             initial="hide"
             whileInView="show"
             ref={scrollRef}
-            className="flex items-center cursor-pointer justify-center gap-5"
+            className="flex items-center cursor-pointer bg-white px-3 py-2.5 rounded-md justify-center gap-5"
           >
-            <Icons.google />
-            <Icons.facebook />
+            <a href="tel:" className=""><Call color="#00000099" size={25} variant="Bold" /></a>
+            <a href="mailto:admin@retailcore.com" className=""><Message color="#00000099" size={25} variant="Bold" /></a>
             <Icons.instagram />
             <Icons.twitter />
           </motion.div>
