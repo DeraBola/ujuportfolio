@@ -7,7 +7,7 @@ function AboutUs () {
     <section id="about" className="mt-14 px-[6.22vw] text-center mb-36 lg:mb-16 flex flex-col item-center justify-center gap-3 lg:gap-10">
       <p className=" lg:text-4xl text-xl font-bold text-[#070403]">ABOUT US</p>
       <div className="flex lg:flex-row flex-col gap-6 items-start justify-start ">
-        <div className="bg-[#4d423d] p-7 lg:w-1/2 bg-opacity-[70%] w-full">
+        <div className="bg-[#080808] p-7 lg:w-1/2 bg-opacity-[70%] w-full">
           <Image src={FirstImage} alt="" />
         </div>
         <div className="flex flex-col text-[#070403] gap-4 w-full lg:w-1/2 items-start justify-start">
