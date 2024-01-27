@@ -10,14 +10,14 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <nav className="top-0 px-[6.22vw] z-[99999990] flex bg-[#4d423d] justify-between items-center bg-opacity-[42%] fixed py-4 w-full">
+    <nav className="top-0 px-[6.22vw] z-[99999990] flex bg-white justify-between items-center bg-opacity-[42%] fixed py-4 w-full">
       <Link href="#home">
         <div className="w-16 h-16">
           <Image className="w-full h-full" src={Logo} alt="" />
         </div>
       </Link>
       <ol className="cursor-pointer hidden lg:flex py-4">
-        <div className="flex gap-6 text-[#ffff] text-base font-bold items-center justify-start">
+        <div className="flex gap-6 text-[#080808] text-base font-bold items-center justify-start">
           <li>
             <Link href="#home">Home</Link>
           </li>

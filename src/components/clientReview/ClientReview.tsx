@@ -2,7 +2,7 @@
 
 import React, { useRef, useState } from "react";
 import { Icons } from "@/components/Icons/Icons";
-import { flowerImage } from "@/assets";
+import { BrandingImg, flowerImage } from "@/assets";
 import Image from "next/image";
 import { fadeUp1, fadeUp2 } from "@/utils/framer-motion-variants";
 import { motion } from "framer-motion";
@@ -52,8 +52,8 @@ function ClientReview () {
 
   return (
     <section  className="lg:h-auto h-[25rem] lg:mb-0 mb-10 relative w-full">
-      <div className="hidden lg:block ">
-        <Image src={flowerImage} alt="flower background" className="bg-cover w-full" />
+      <div className="hidden w-full h-[500px] lg:block ">
+        <Image src={BrandingImg} alt="flower background" className="bg-cover h-full w-full" />
       </div>
       <div className="lg:px-[6.22vw] flex items-center justify-center flex-col w-full lbg-white  backdrop-filter lg:rounded-none rounded-lg lg:border-none border border-[#372b25] backdrop-blur-sm bg-opacity-10 animate-fade absolute top-1/2 -translate-y-1/2">
         <p className="text-[#070403] font-bold text-base mb-4 mt-6 lg:text-3xl">What Our Customers Are Saying</p>
@@ -66,7 +66,7 @@ function ClientReview () {
             key={index}
           >
             <div
-              className="ml-auto rounded-full p-2 mb-2 lg:mb-4 border border-[#412626] cursor-pointer"
+              className="ml-auto rounded-full p-2 mb-2 lg:mb-4 border bg-white border-[#412626] cursor-pointer"
               onClick={nextSlide}
             >
               <Icons.arrowRight />
@@ -77,7 +77,7 @@ function ClientReview () {
               initial="hide"
               whileInView="show"
               ref={scrollRef}
-              className="animate-fade text-[#070403] font-bold text-base lg:text-xl"
+              className="animate-fade text-[#080808] font-bold text-base lg:text-xl"
             >
               {review.title}
             </motion.p>
@@ -87,7 +87,7 @@ function ClientReview () {
               initial="hide"
               whileInView="show"
               ref={scrollRef}
-              className="animate-fade text-sm w-full  lg:max-w-[800px] lg:text-base text-[#070403] font-medium"
+              className="animate-fade text-sm w-full  lg:max-w-[800px] lg:text-base text-[#080808] font-medium"
             >
               {review.content}
             </motion.p>
@@ -97,12 +97,12 @@ function ClientReview () {
               initial="hide"
               whileInView="show"
               ref={scrollRef}
-              className="animate-fade text-black font-bold text-sm lg:text-base"
+              className="animate-fade text-[#080808] font-bold text-sm lg:text-base"
             >
               {review.name}
             </motion.p>
             <div
-              className="mr-auto mt-6 mb-5 lg:mb-0 rounded-full p-2 border border-[#412626] cursor-pointer"
+              className="mr-auto mt-6 mb-5 lg:mb-9 rounded-full p-2 border bg-white border-[#412626] cursor-pointer"
               onClick={goToPrevSlide}
             >
               <Icons.arrowLeft />
